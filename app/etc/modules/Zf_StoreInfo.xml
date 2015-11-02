@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Zf_StoreInfo>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Zf_StoreInfo>
+    </modules>
+</config>

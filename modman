@@ -1,0 +1,4 @@
+app/code/community/Zf/StoreInfo
+app/design/frontend/base/default/template/zfstoreinfo
+app/design/frontend/base/default/layout/zfstoreinfo.xml
+app/etc/modules/Zf_Storeinfo.xml

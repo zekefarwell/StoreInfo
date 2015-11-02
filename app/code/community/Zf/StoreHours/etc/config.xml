@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Zf_StoreInfo>
+            <version>0.1.0</version>
+        </Zf_StoreInfo>
+    </modules>
+    <global>
+        <blocks>
+            <zfstore>
+                <class>Zf_StoreInfo_Block</class>
+            </zfstore>
+        </blocks>
+        <models>
+            <zfstore>
+                <class>Zf_StoreInfo_Model</class>
+            </zfstore>
+        </models>
+        <helpers>
+            <zfstore>
+                <class>Zf_StoreInfo_Helper</class>
+            </zfstore>
+        </helpers>
+
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <zfstore>
+                    <file>zfstoreinfo.xml</file>
+                </zfstore>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <zfstore>
+            <business_hours>
+                <monday>10:00 am - 7:00 pm</monday>
+                <tuesday>10:00 am - 7:00 pm</tuesday>
+                <wednesday>10:00 am - 7:00 pm</wednesday>
+                <thursday>10:00 am - 7:00 pm</thursday>
+                <friday>10:00 am - 8:00 pm</friday>
+                <saturday>10:00 am - 8:00 pm</saturday>
+                <sunday>10:00 am - 6:00 pm</sunday>
+            </business_hours>
+        </zfstore>
+    </default>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <placeholders>
+        <zfstore_business_hours>
+            <block>zfstore/hours</block>
+            <name>footer_bottom</name>
+            <placeholder>ZFSTORE_BUSINESS_HOURS</placeholder>
+            <container>Zf_StoreInfo_Model_Container_HoursToday</container>
+            <cache_lifetime>3600</cache_lifetime>
+        </zfstore_business_hours>
+    </placeholders>
+</config>
