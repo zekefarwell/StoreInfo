@@ -77,8 +77,8 @@
                         </sunday>
                         <exceptions translate="label">
                             <label>Exceptions</label>
-                            <frontend_model>zfstore/adminhtml_system_config_hoursExceptions</frontend_model>
-                            <backend_model>zfstore/system_config_backend_serialized_dateArray</backend_model>
+                            <frontend_model>storeinfo/adminhtml_system_config_hoursExceptions</frontend_model>
+                            <backend_model>storeinfo/system_config_backend_serialized_dateArray</backend_model>
                             <sort_order>8</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>

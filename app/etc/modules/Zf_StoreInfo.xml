@@ -4,6 +4,9 @@
         <Zf_StoreInfo>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_Page/>
+            </depends>
         </Zf_StoreInfo>
     </modules>
 </config>

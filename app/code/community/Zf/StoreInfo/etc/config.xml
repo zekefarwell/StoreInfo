@@ -25,9 +25,9 @@
     <frontend>
         <layout>
             <updates>
-                <zfstore>
+                <storeinfo>
                     <file>zfstoreinfo.xml</file>
-                </zfstore>
+                </storeinfo>
             </updates>
         </layout>
     </frontend>
