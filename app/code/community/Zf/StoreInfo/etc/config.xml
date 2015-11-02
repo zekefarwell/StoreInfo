@@ -7,21 +7,20 @@
     </modules>
     <global>
         <blocks>
-            <zfstore>
+            <storeinfo>
                 <class>Zf_StoreInfo_Block</class>
-            </zfstore>
+            </storeinfo>
         </blocks>
         <models>
-            <zfstore>
+            <storeinfo>
                 <class>Zf_StoreInfo_Model</class>
-            </zfstore>
+            </storeinfo>
         </models>
         <helpers>
-            <zfstore>
+            <storeinfo>
                 <class>Zf_StoreInfo_Helper</class>
-            </zfstore>
+            </storeinfo>
         </helpers>
-
     </global>
     <frontend>
         <layout>
