@@ -1,10 +1,10 @@
 <?php
 /**
- * To be inserted via shortcode into a CMS page
  * @var $this  Zf_StoreInfo_Block_Hours
  */
 ?>
-<h3>Retail Store Hours</h3>
+<h1><?php echo $this->getStoreName() ?></h1>
+<h3>Business Hours</h3>
 <table class="business-hours">
     <tr><th class="text-right">Monday:    </th><td> <?php echo $this->getWeekdayHours('monday'); ?></td><tr>
     <tr><th class="text-right">Tuesday:   </th><td> <?php echo $this->getWeekdayHours('tuesday'); ?></td><tr>
@@ -14,8 +14,9 @@
     <tr><th class="text-right">Saturday:  </th><td> <?php echo $this->getWeekdayHours('saturday'); ?></td><tr>
     <tr><th class="text-right">Sunday:    </th><td> <?php echo $this->getWeekdayHours('sunday'); ?></td><tr>
 </table>
+<br>
 
-<?php $exceptions = $this->getCurrentExceptions('retail_store'); ?>
+<?php $exceptions = $this->getCurrentExceptions(); ?>
 
 <?php if($exceptions): ?>
     <h4>Upcoming Special Hours</h4>
@@ -29,5 +30,15 @@
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+<br><br>
 
-<p>Eastern Time</p>
+<h3>Location</h3>
+<ul>
+    <li><b>Address: </b> <?php echo $this->getAddress() ?></li>
+    <li><b>Phone Number: </b> <?php echo $this->getPhoneNumber() ?></li>
+</ul>
+
+<br><br>
+
+<iframe src="<?php echo $this->getGoogleMapsUrl() ?>"
+        width="600" height="450" frameborder="0" style="border:0; max-width: 100%;" allowfullscreen></iframe>

@@ -23,6 +23,15 @@
         </helpers>
     </global>
     <frontend>
+        <routers>
+            <storeinfo>
+                <use>standard</use>
+                <args>
+                    <module>Zf_StoreInfo</module>
+                    <frontName>retail-store</frontName>
+                </args>
+            </storeinfo>
+        </routers>
         <layout>
             <updates>
                 <storeinfo>
@@ -33,6 +42,12 @@
     </frontend>
     <default>
         <zfstore>
+            <location>
+                <store_name>Retail Store</store_name>
+                <address>587 Street Road, Anytown, USA</address>
+                <phone>888-888-8888</phone>
+                <google_maps_url><![CDATA[https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4317.487277220838!2d-73.98490333877962!3d40.77513704814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xee9667607a1d332f!2sApple+Store!5e0!3m2!1sen!2sus!4v1446443442185]]></google_maps_url>
+            </location>
             <business_hours>
                 <monday>10:00 am - 7:00 pm</monday>
                 <tuesday>10:00 am - 7:00 pm</tuesday>

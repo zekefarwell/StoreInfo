@@ -2,13 +2,13 @@
 
         <div class="block-title">
             <strong>
-                <a href="/retail-store">Retail Store</a>
+                <a href="/retail-store"><?php echo $this->getStoreName(); ?></a>
             </strong>
         </div>
         <p>
             <a href="/retail-store">
-            587 Street Road, Anytown, USA <br/>
-            <?php echo $this->getTodaysHours(); ?>
+                <?php echo $this->getAddress(); ?> <br/>
+                <?php echo $this->getTodaysHours(); ?>
             </a>
         </p>
 </div>

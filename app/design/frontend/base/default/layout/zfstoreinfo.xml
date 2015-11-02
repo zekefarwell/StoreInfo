@@ -7,8 +7,15 @@
             <block type="storeinfo/hours" name="footer_store_info" template="zfstoreinfo/footer.phtml">
             </block>
             <!-- Footer needs the same cache lifetime as it's child business hours blocks -->
-            <action method="setCacheLifetime"><seconds>1</seconds></action>
+            <action method="setCacheLifetime"><seconds>3600</seconds></action>
         </reference>
     </default>
+
+    <storeinfo_index_index>
+        <reference name="content">
+            <block type="storeinfo/hours" name="storeinfo_page_content" template="zfstoreinfo/page.phtml"/>
+        </reference>
+    </storeinfo_index_index>
+
 
 </layout>

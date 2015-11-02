@@ -52,7 +52,8 @@ class Zf_StoreInfo_Block_Hours extends Mage_Core_Block_Template
      * Returns a business hours exception matching today's date, or false if none found
      * @return array|bool
      */
-    protected function _checkForException() {
+    protected function _checkForException()
+    {
         $today = Mage::getModel('core/date')->date('Y-m-d');
         $exceptions = $this->_getExceptions();
         if (is_array($exceptions)) {
@@ -86,13 +87,16 @@ class Zf_StoreInfo_Block_Hours extends Mage_Core_Block_Template
         $exceptions = $this->_getExceptions();
         $today = new DateTime();
         $current_exceptions = array();
-        foreach ($exceptions as $exception) {
-            if ($exception['date'] == '' ) continue;  // skip if date is blank
-            $exceptionDate = new DateTime($exception['date']);
-            if ($today < $exceptionDate->modify('+2 days') && $today > $exceptionDate->modify('-12 days')) {
-                $current_exceptions[] = $exception;
+        if ($exceptions) {
+            foreach ($exceptions as $exception) {
+                if ($exception['date'] == '' ) continue;  // skip if date is blank
+                $exceptionDate = new DateTime($exception['date']);
+                if ($today < $exceptionDate->modify('+2 days') && $today > $exceptionDate->modify('-12 days')) {
+                    $current_exceptions[] = $exception;
+                }
             }
         }
+
         if (empty($current_exceptions)) {
             return false;
         } else {
@@ -116,6 +120,26 @@ class Zf_StoreInfo_Block_Hours extends Mage_Core_Block_Template
     {
         $timestamp = date("l H:i:s", Mage::getModel('core/date')->timestamp(time()));
         return $timestamp;
+    }
+
+    public function getGoogleMapsUrl()
+    {
+        return Mage::getStoreConfig('zfstore/location/google_maps_url');
+    }
+
+    public function getStoreName()
+    {
+        return Mage::getStoreConfig('zfstore/location/store_name');
+    }
+
+    public function getPhoneNumber()
+    {
+        return Mage::getStoreConfig('zfstore/location/phone');
+    }
+
+    public function getAddress()
+    {
+        return Mage::getStoreConfig('zfstore/location/address');
     }
 
 }

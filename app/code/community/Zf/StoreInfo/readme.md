@@ -5,7 +5,7 @@ Store Info
 The Retail Store page displays a complete breakdown of the retail store's current
 normal weekly hours, as well as any upcoming exceptions for
 specific dates the store is closed or has irregular hours.  You edit the weekly hours
-and exceptions in the Magento Admin at ***System > Configuration > General > Hours***.
+and exceptions in the Magento Admin at ***System > Configuration > General > Retail Store Info***.
 As with any Magento changes, clearing the cache may be necessary before being reflected
 on the front end.  On any give day the Upcoming Special Hours section displays any
 exceptions in the range of yesterday to 10 days in the future.
