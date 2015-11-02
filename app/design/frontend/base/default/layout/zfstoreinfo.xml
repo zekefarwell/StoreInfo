@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 
-<layout version="0.1.0">
+<layout>
+
+    <default>
+        <reference name="footer">
+            <block type="storeinfo/hours" name="footer_store_info" template="zfstoreinfo/footer.phtml">
+            </block>
+            <!-- Footer needs the same cache lifetime as it's child business hours blocks -->
+            <action method="setCacheLifetime"><seconds>1</seconds></action>
+        </reference>
+    </default>
 
 </layout>
